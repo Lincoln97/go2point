@@ -37,12 +37,12 @@ void odomCallback(const nav_msgs::OdometryConstPtr &msg){
     if(d > 0.1){
         if(dt > 0.5){
             v.linear.x = 2;
-            v.angular.z = 0.5;
+            v.angular.z = 0.1*dt;
         }
         else{
             if(dt < -0.5){
                 v.linear.x = 2;
-                v.angular.z = -0.5;
+                v.angular.z = 0.1*dt;
             }
             else {
                 v.linear.x = 2;
