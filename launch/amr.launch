@@ -1,0 +1,4 @@
+<launch>
+	<node name="go" pkg="go2point" type="go2"/>
+	<node name="kine" pkg="kine_controler" type="control"/>
+</launch>
